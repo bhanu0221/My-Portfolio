@@ -1,0 +1,86 @@
+/* Custom Home Styles */
+.home-section {
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    /* focus on face (top of the image) */
+    border: 5px solid #f59e0b;
+    /* amber-500 */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.home-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d97706;
+    /* amber-600 */
+    margin-bottom: 1rem;
+}
+
+.Right-text {
+    /* box-shadow: 0 8px 20px rgba(156, 167, 234, 0.448); */
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.home-paragraph {
+    color: white;
+    /* gray-700 */
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    padding-top: 1rem;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.a {
+    background: #808bf4;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.a:hover {
+    background: #4f46e5; /* indigo-600 */
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive Tweaks */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-title {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .home-paragraph {
+        text-align: left;         /* Easier to read on small screens */
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+}
