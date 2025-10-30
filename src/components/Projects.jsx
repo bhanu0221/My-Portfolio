@@ -63,18 +63,18 @@ function Projects() {
       <div className="project">
         <img src={newsImg} alt="NewsHive" />
         <div className="project-details">
-          <h3>NewsHive! A basic daily news site</h3>
+          <h3>NewsHive! Daily news site</h3>
           <p>
             A website that gives you real-time news and also provides different
             categories like Crypto, Sports, etc.
           </p>
           <div className="tech">
-            Tech Used: HTML, CSS, JavaScript and Public APIs
+            Tech Used: React.js HTML, CSS, JavaScript and Public APIs
           </div>
           <p>
             For more information visit the{" "}
             <a
-              href="https://github.com/bhanu0221/NewsHive-Project.git"
+              href="https://github.com/bhanu0221/NewsHive-Project-Frontend.git"
               target="_blank"
               rel="noopener noreferrer"
             >
