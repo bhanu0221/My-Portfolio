@@ -52,11 +52,10 @@ function About() {
             <h3 className="about-subtitle">Technical Skills</h3>
             <motion.ul className="about-list" variants={textVariants} initial="hidden" whileInView="visible" viewport={{ once: false }}>
                 <li>
-                    <strong>Frontend:</strong> HTML, CSS, JavaScript with basic DOM,
-                    Bootstrap, learning React.js
+                    <strong>Frontend:</strong> HTML, CSS, JavaScript with basic DOM, React.js and learning advance react.js 
                 </li>
                 <li>
-                    <strong>Backend:</strong> Python, Node.js (Flask, Pandas)
+                    <strong>Backend:</strong> Python(basic flask), Node.js (express.js)
                 </li>
                 <li>
                     <strong>Database:</strong> MySQL, Firebase Firestore

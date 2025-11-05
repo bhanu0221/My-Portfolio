@@ -32,14 +32,12 @@
 }
 
 .Right-text {
-    /* box-shadow: 0 8px 20px rgba(156, 167, 234, 0.448); */
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 1rem;
 }
 
 .home-paragraph {
     color: white;
-    /* gray-700 */
     line-height: 1.7;
     font-size: 1.1rem;
     margin-bottom: 1rem;
@@ -62,7 +60,7 @@
 }
 
 .a:hover {
-    background: #4f46e5; /* indigo-600 */
+    background: #4f46e5; 
     transform: translateY(-2px);
 }
 

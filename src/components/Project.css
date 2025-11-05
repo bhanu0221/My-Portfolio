@@ -48,7 +48,8 @@
 }
 
 .project-details .tech {
-  font-weight: 600;
+  text-align: left;
+  font-weight: 500;
   margin: 10px 0;
   color: #a3c9f0d6;
 }

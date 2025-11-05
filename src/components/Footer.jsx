@@ -3,10 +3,11 @@ import React from 'react'
 function Footer() {
     return (
         <footer style={{
+            fontFamily: "cursive",
             textAlign: "center",
-            padding: "16px 0",
+            padding: "14px 0",
             width: "100%",
-            fontSize: "16px",
+            fontSize: "0.90rem",
             color: "black",
             backgroundColor: "#f59e0b",
         }}>

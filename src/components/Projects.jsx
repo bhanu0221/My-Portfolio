@@ -21,7 +21,7 @@ function Projects() {
             improve item recovery.
           </p>
           <div className="tech">
-            Tech Used: HTML, CSS, JS, Python (Flask), MySQL, Firebase
+            <strong className='text-gray-950'>Tech Used:</strong> HTML, CSS, JS, Python (Flask), MySQL, Firebase
           </div>
           <p>
             For more information visit the{" "}
@@ -43,9 +43,10 @@ function Projects() {
           <h3>Simple Python based Chatbot</h3>
           <p>
             A console-based chatbot built using Python pandas and Flask to
-            respond based on pre-defined datasets.
+            respond based on pre-defined datasets. just build for learning purpose.
           </p>
-          <div className="tech">Tech Used: Python, Pandas</div>
+          <div className="tech">
+            <strong className='text-gray-950'>Tech Used:</strong> Python, Pandas and basic HTML and JavaScript</div>
           <p>
             For more information visit the{" "}
             <a
@@ -66,10 +67,10 @@ function Projects() {
           <h3>NewsHive! Daily news site</h3>
           <p>
             A website that gives you real-time news and also provides different
-            categories like Crypto, Sports, etc.
+            categories of news in real-time like Crypto, Sports, social etc.
           </p>
           <div className="tech">
-            Tech Used: React.js HTML, CSS, JavaScript and Public APIs
+            <strong className='text-gray-950'>Tech Used:</strong> React.js with Vite HTML, CSS, JavaScript and Public APIs.
           </div>
           <p>
             For more information visit the{" "}
@@ -94,7 +95,7 @@ function Projects() {
             Real-Time Currency Conversion: Get up-to-the-minute exchange rates for various fiat currencies.
           </p>
           <div className="tech">
-            Tech Used: Vite+react: A build tool that provides a lightning-fast development experience for modern web projects.<br/>
+            <strong className='text-gray-950'>Tech Used:</strong> Vite+react: It's provides a lightning-fast development experience for modern web projects.<br/>
             Public APIs:<br/>
             CoinGecko API: Used to fetch the latest cryptocurrency prices.<br/>
             frankfurter API: Used for real-time fiat currency exchange rates.<br/>
