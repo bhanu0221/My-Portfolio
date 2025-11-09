@@ -3,6 +3,7 @@ import myphoto from '../assets/Anup.png';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import pdf from '../../public/Anup resume.pdf';
 
 function Home() {
 
@@ -93,6 +94,9 @@ function Home() {
                         <Link to="https://www.linkedin.com/in/anup-shahi-50486530a/" className='a'>LinkedIn</Link>
                         <Link to="/feedback" className='a'>Feedback</Link>
                         <Link to="/projects" className='a'>Projects</Link>
+                        <a href={pdf} className='a' download="My_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                        <button>Download My Resume</button>
+                        </a>
                     </div>
                 </div>
             </div>
