@@ -2,7 +2,6 @@
 import React from "react";
 const imageNames = [
     "20250313_055726000_iOS_11zon.jpg",
-    "20250603_211356_11zon.jpg",
     "IMG-20230306-WA0024.jpg",
     "IMG-20230525-WA0034.jpg",
     "IMG-20230728-WA0019.jpg",
@@ -15,7 +14,6 @@ const imageNames = [
     "IMG_20231021_224216975_11zon.jpg",
     "IMG_20240204_111715_144.jpg",
     "IMG_20240204_144714887_11zon.jpg",
-    "IMG_20240204_144716553_11zon.jpg",
     "IMG_20240204_144744472_11zon.jpg",
     "IMG_20240204_145831920_11zon.jpg",
     "WhatsApp Image 2023-05-26 at 4.21.16 PM.jpeg",
@@ -30,6 +28,7 @@ export default function Memories() {
             <h2 className="text-2xl font-bold text-center mb-6 text-amber-500">📸 My Memories</h2>
             <p style={{textAlign:"center", fontStyle:"italic", color:"white"}}>Welcome to my memories page! Here, I share some of the moments that have shaped my journey.</p>
             <p style={{textAlign:"center", fontStyle:"italic", color:"white",paddingBottom:"3rem"}}>These are some of my favorite memories and experiences:</p>
+            
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {imageNames.map((photos, index) => (
                     <div
