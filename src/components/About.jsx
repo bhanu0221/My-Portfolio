@@ -10,7 +10,7 @@ function About() {
 
     const textVariants = {
         hidden: { opacity: 0, y: 20 }, // Start slightly below
-        visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
     };
 
     return (
@@ -23,8 +23,8 @@ function About() {
                 Hi, I'm <motion.span className="font-semibold text-blue-500" variants={textVariants} initial="hidden" whileInView="visible" viewport={{ once: false }}>Anup Shahi</motion.span>.
                 I'm from Uttarakhand and have completed my Bachelor's degree in
                 Computer Applications (BCA) from Dehradun. I'm passionate about web
-                development and data analysis, and I'm always eager to learn and gain practical
-                experience and learn new skills.
+                development and Technologies, and I'm always eager to learn and wanted to gain practical
+                experience by doing and learning new skills.
                 I enjoy solving real-world problems, exploring new technologies, and
                 constantly improving myself. Currently, I'm looking for an entry-level
                 position in software and web development.
@@ -74,8 +74,8 @@ function About() {
             {/* Current Work */}
             <h3 className="about-subtitle">What I'm Currently Doing</h3>
             <motion.p className="about-text" variants={textVariants} initial="hidden" whileInView="visible" viewport={{ once: false }}>
-                I'm currently working on several projects to enhance my skills and
-                build a portfolio. I enjoy learning new technologies and applying them
+                I'm currently working on several projects and enhance my skills. 
+                Also build a portfolio. I enjoy learning new technologies and applying them
                 in practical scenarios. My goal is to become a proficient web/software
                 developer and also explore data analytics.
                 I am also exploring AI tools to improve my coding efficiency and
