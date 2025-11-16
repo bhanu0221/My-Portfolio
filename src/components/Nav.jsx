@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // icons
+// instead of lucide I have used Font Awesome CDN
+// import { Menu, X } from "lucide-react"; //  No need for lucide Icon. 
 import { Link } from 'react-router-dom';
 
 
@@ -35,7 +36,12 @@ function Nav() {
                 {/* Mobile Hamburger */}
                 <button className="md:hidden text-white focus:outline-none" title="menu option responsive"
                     onClick={toggleMenu} // onClick={() => setIsOpen(!isOpen)} also write like this.
-                >{isOpen ? <X size={28} /> : <Menu size={28} />}
+                >
+                    {isOpen ? (
+                        <i className="fa-solid fa-xmark text-3xl"></i>
+                    ) : (
+                        <i className="fa-solid fa-bars text-3xl"></i>
+                    )}
                 </button>
 
             </nav>
