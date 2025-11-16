@@ -5,17 +5,35 @@ function Footer() {
         <footer style={{
             fontFamily: "cursive",
             textAlign: "center",
-            padding: "14px 0",
+            padding: "5px 0",
             width: "100%",
-            fontSize: "0.90rem",
-            color: "black",
-            backgroundColor: "#f59f0bc6",
+            fontSize: "14px",
+            color: "white",
+            backgroundColor: "orange",
         }}>
 
-            <p>Made By <span style={{fontWeight:"bold", color:"blue"}}>Anup Shahi</span> © 2025 All rights reserved.</p>
-            <p>Click to visit<a href=" https://github.com/bhanu0221" target="_blank" rel="noopener noreferrer"
-                style={{ color: "#2980b9", marginLeft: "5px" }}>GitHub </a>and Click to visit my profile <a href="https://www.linkedin.com/in/anup-shahi-50486530a" target="_blank" rel="noopener noreferrer"
-                style={{ color: "#2980b9", marginLeft: "5px" }}>LinkedIn </a></p>
+            <p>Made By <span style={{ fontWeight: "bold", color: 'Highlight'}}>Anup Shahi</span> © 2025 All rights reserved.</p>
+            <div className="footer-links">
+                <a
+                    href="https://github.com/bhanu0221"
+                    className="footer-icon my-0 mx-[10px] text-white no-underline text-[28px] transition-colors duration-300 ease-in-out hover:text-blue-400"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="View GitHub"
+                >
+                    <i className="fab fa-github"></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/anup-shahi-50486530a"
+                    className="footer-icon my-0 mx-[10px] text-white no-underline text-[28px] transition-colors duration-300 ease-in-out hover:text-blue-400"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Visit LinkedIn"
+                >
+                    <i className="fab fa-linkedin"></i>
+                </a>
+            </div>
         </footer>
     )
 }
