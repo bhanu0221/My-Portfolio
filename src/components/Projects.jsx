@@ -95,11 +95,8 @@ function Projects() {
             Real-Time Currency Conversion: Get up-to-the-minute exchange rates for various fiat currencies.
           </p>
           <div className="tech">
-            <strong className='text-gray-950'>Tech Used:</strong> Vite+react: It's provides a lightning-fast development experience for modern web projects.<br/>
-            Public APIs:<br/>
-            CoinGecko API: Used to fetch the latest cryptocurrency prices.<br/>
-            frankfurter API: Used for real-time fiat currency exchange rates.<br/>
-            slingacademy API: Used to fetch random photos.
+            <strong className='text-gray-950'>Tech Used:</strong> Vite+react: It's provides a lightning-fast experience web projects.<br/>
+            Used Public APIs: CoinGecko, frankfurter, slingacademy.
           </div>
           <p>
             For more information visit the{" "}
