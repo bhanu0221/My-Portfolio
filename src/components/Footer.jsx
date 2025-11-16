@@ -21,7 +21,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     title="View GitHub"
                 >
-                    <i className="fab fa-github"></i>
+                    <i className="fab fa-github"></i>   {/** using CDN for logos and linked with Index.html */}
                 </a>
 
                 <a
@@ -31,7 +31,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     title="Visit LinkedIn"
                 >
-                    <i className="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>  {/* same here also */}
                 </a>
             </div>
         </footer>
