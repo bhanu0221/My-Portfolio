@@ -1,22 +1,29 @@
-import React from 'react'
+import React from 'react';
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // icons
 import { Link } from 'react-router-dom';
+
+
 function Nav() {
 
     const [isOpen, setIsOpen] = useState(false);
+
+    function toggleMenu() {
+        setIsOpen(prev => !prev);
+    }
+
 
     return (
 
         <div className='bg-amber-500 shadow-md'>
             <nav className="container mx-auto flex justify-between items-center px-4 py-3">
-                {/* logo */}
+
                 <div className="text-white font-bold text-2xl">
-                    <Link to="/">My Portfolio</Link>
+                    <p>My Portfolio</p>
                 </div>
 
-                {/* Desktop Menu */}
 
+                {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-6 text-white font-medium text-2xl">
                     <Link to="/" className="hover:text-gray-600 transition">Home</Link>
                     <Link to="/about" className="hover:text-gray-600 transition">About</Link>
@@ -26,20 +33,15 @@ function Nav() {
                 </div>
 
                 {/* Mobile Hamburger */}
-
-                <button
-                    className="md:hidden text-white focus:outline-none"
-                    title="menu option for responsive"
-                    onClick={() => setIsOpen(!isOpen)}
-
-                >
-                    {isOpen ? <X size={28} /> : <Menu size={28} />}
+                <button className="md:hidden text-white focus:outline-none" title="menu option responsive"
+                    onClick={toggleMenu} // onClick={() => setIsOpen(!isOpen)} also write like this.
+                >{isOpen ? <X size={28} /> : <Menu size={28} />}
                 </button>
 
             </nav>
 
-            {/* Mobile Dropdown */}
 
+            {/* Mobile Dropdown */}
             {isOpen && (
                 <div className="md:hidden flex flex-col space-y-2 px-4 pb-4 bg-amber-500 text-white font-medium">
                     <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>

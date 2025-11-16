@@ -3,7 +3,7 @@ import myphoto from '../assets/Anup.png';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import pdf from '../../public/Anup resume.pdf';
+import pdf from '../../src/assets/Anup resume.pdf';
 
 function Home() {
 
