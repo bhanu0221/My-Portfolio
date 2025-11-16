@@ -25,9 +25,8 @@ const imageNames = [
 export default function Memories() {
     return (
         <div className="p-6 bg-gray-800">
-            <h2 className="text-2xl font-bold text-center mb-6 text-amber-500">📸 My Memories</h2>
-            <p style={{textAlign:"center", fontStyle:"italic", color:"white"}}>Welcome to my memories page! Here, I share some of the moments that have shaped my journey.</p>
-            <p style={{textAlign:"center", fontStyle:"italic", color:"white",paddingBottom:"3rem"}}>These are some of my favorite memories and experiences:</p>
+            <h2 className="text-2xl font-bold text-center mb-6 text-amber-500">📸 My College Memories</h2>
+            <p style={{textAlign:"center", fontStyle:"italic", color:"white"}}>Welcome to my memories page! Here, I share some of the best moments that have shaped my journey.</p>
             
             <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {imageNames.map((photos, index) => (

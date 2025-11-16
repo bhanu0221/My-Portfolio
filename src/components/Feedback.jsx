@@ -5,7 +5,7 @@ export default function Feedback() {
     
       <div className="w-full max-full bg-gray-800  shadow-lg p-6 min-h-[400px] sm:min-h-[500px] md:min-h-[600px]">
         <h2 className="text-2xl md:text-3xl font-semibold text-amber-500 mb-2 text-center">Feedback</h2>
-        <p className="text-white mb-4 text-center text-2xl">I'd love to hear your thoughts -please fill out the form below.</p>
+        <p className="text-white mb-4 text-center text-2xl">love to hear your thoughts -please fill out the form below.</p>
 
         <iframe
           title="Feedback Form"
