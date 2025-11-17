@@ -11,23 +11,23 @@ function Hero() {
 
 
     return (
-        <section id="home" className="min-h-[80vh] flex items-center  bg-slate-100">
+        <section id="home" className="min-h-[80vh] flex items-center ">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid gap-8 md:grid-cols-2 items-center">
                     <div>
                         <h2 className="text-4xl sm:text-4xl font-extrabold leading-tight">
                             Hi — I'm <span className="text-indigo-600">Anup Shahi</span>, an Aspiring Frontend Developer
                         </h2>
-                        <p className="mt-4 text-gray-600 max-w-xl">
+                        <p className="mt-4 text-gray-900 max-w-xl">
                             I'm learning to build clean and responsive web apps using React, Vite, and modern CSS.
                             I enjoy creating simple, user-friendly interfaces and improving my skills with every project.
                         </p>
 
 
                         <div className="mt-6 flex gap-3">
-                            <button onClick={() => goTo('projects')} className="px-4 py-2 bg-indigo-600 text-white rounded-md cursor-pointer">View Projects</button>
-                            <button onClick={() => goTo('contact')} className="px-4 py-2 border rounded-md hover:bg-blue-200 cursor-pointer">Contact</button>
-                            <a href={pdf} className='px-4 py-2 border rounded-md hover:bg-blue-200 cursor-pointer' download="My_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <button onClick={() => goTo('projects')} className="px-3 py-1.5 bg-indigo-600 text-white rounded-md cursor-pointer">View Projects</button>
+                            <button onClick={() => goTo('contact')} className="px-3 py-1.5 bg-indigo-600 text-white rounded-md cursor-pointer">Contact</button>
+                            <a href={pdf} className='px-3 py-1.5 bg-indigo-600 text-white rounded-md cursor-pointer' download="My_Resume.pdf" target="_blank" rel="noopener noreferrer">
                                 Download My Resume
                             </a>
                         </div>

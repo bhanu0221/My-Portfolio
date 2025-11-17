@@ -42,7 +42,7 @@ function Projects() {
                     {projects.map((p, index) => (
                         <div
                             key={index}
-                            className="bg-slate-100 rounded-2xl p-5 shadow hover:shadow-lg transition"
+                            className="bg-white/10 backdrop-blur-md rounded-2xl p-5 shadow hover:shadow-lg transition"
                         >
                             {/* Image */}
                             <img
@@ -52,13 +52,13 @@ function Projects() {
                             />
                             {/* Title + Desc */}
                             <h3 className="font-semibold text-lg">{p.title}</h3>
-                            <p className="mt-2 text-sm text-gray-600">{p.desc}</p>
+                            <p className="mt-2 text-sm text-gray-800">{p.desc}</p>
                             {/* Tech Chips */}
                             <div className="mt-4 flex flex-wrap gap-2">
                                 {p.tech.map((t) => (
                                     <span
                                         key={t}
-                                        className="text-xs px-2 py-1 bg-slate-200 rounded-full"
+                                        className="text-xs px-2 py-1 bg-slate-50 rounded-full text-blue-600"
                                     >
                                         {t}
                                     </span>
@@ -69,7 +69,7 @@ function Projects() {
                                 <a
                                     href={p.github}
                                     target="_blank"
-                                    className="text-sm px-3 py-1 bg-black text-white rounded-lg"
+                                    className="text-sm px-3 py-1 bg-emerald-400 text-black rounded-lg"
                                 >
                                     GitHub
                                 </a>

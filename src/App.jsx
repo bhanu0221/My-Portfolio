@@ -6,11 +6,12 @@ import Projects from '../src/components/Project/Project.jsx';
 import Certificates from '../src/components/Certificates/Certificates.jsx';
 import Contact from '../src/components/Contact/Contact.jsx';
 import Footer from '../src/components/Footer/Footer.jsx';
+import '../src/App.css'
 
 function App() {
   return (
     
-      <div className="min-h-screen text-gray-800 bg-slate-50">
+      <div className="App min-h-screen text-gray-800">
         {/* Keep App.jsx minimal — it just composes components */}
         <Navbar />
         <main className="pt-20">

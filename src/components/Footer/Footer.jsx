@@ -1,7 +1,8 @@
 import React from 'react'
 function Footer() {
     return (
-        <footer style={{
+        <footer 
+            style={{
             fontFamily: "cursive",
             textAlign: "center",
             padding: "5px 0",

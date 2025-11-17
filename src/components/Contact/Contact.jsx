@@ -4,7 +4,7 @@ function ContactLink() {
   const url = "https://docs.google.com/forms/d/e/1FAIpQLScV5729GKwAt_gMZoAvIFZlNcIIqmOWK4nE0yXHgegiwWmX6Q/viewform?embedded=true"; // from Google Forms -> Send -> Link
 
   return (
-    <section id="contact" className="py-20 bg-slate-50">
+    <section id="contact" className="py-20">
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold">Contact</h2>
         <p className="mt-2 text-gray-600">Feel Free to Contact If there is issues ? Click below to open the contact form.</p>

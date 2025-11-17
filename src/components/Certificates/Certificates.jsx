@@ -12,7 +12,7 @@ function Certificates() {
     ];
 
     return (
-        <section id="certificates" className="py-20  bg-slate-100">
+        <section id="certificates" className="py-20">
             <div className="max-w-6xl mx-auto px-4">
                 
                 <h2 className="text-3xl font-bold text-center">Certificates</h2>
@@ -21,7 +21,7 @@ function Certificates() {
                     {certs.map((c, i) => (
                         <div 
                             key={i}
-                            className="cert-card bg-white rounded-xl p-4 shadow hover:shadow-xl transition"
+                            className="cert-card rounded-xl p-4 shadow hover:shadow-xl transition"
                         >
                             <img 
                                 src={c.img}

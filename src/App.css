@@ -1,0 +1,4 @@
+.App {
+    background: url("../src/assets/backgroundIMG.png") no-repeat center center fixed;
+    background-size: cover;
+}
