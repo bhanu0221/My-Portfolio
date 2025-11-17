@@ -14,7 +14,7 @@ function App() {
       <div className="App min-h-screen text-gray-800">
         {/* Keep App.jsx minimal — it just composes components */}
         <Navbar />
-        <main className="pt-20">
+        <main className="pt-25">
           <Hero />
           <About />
           <Skills />

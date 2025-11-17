@@ -14,20 +14,14 @@ function Certificates() {
     return (
         <section id="certificates" className="py-20">
             <div className="max-w-6xl mx-auto px-4">
-                
+
                 <h2 className="text-3xl font-bold text-center">Certificates</h2>
 
                 <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                     {certs.map((c, i) => (
-                        <div 
-                            key={i}
-                            className="cert-card rounded-xl p-4 shadow hover:shadow-xl transition"
-                        >
-                            <img 
-                                src={c.img}
-                                alt={c.text}
-                                className="rounded-lg w-full object-cover"
-                            />
+                        <div key={i} className="cert-card rounded-xl p-4 shadow hover:shadow-xl transition">
+
+                            <img src={c.img} alt={c.text} className="rounded-lg w-full object-cover" />
                             <p className="text-center mt-3 text-sm font-medium">
                                 {c.text}
                             </p>

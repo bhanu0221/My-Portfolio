@@ -19,6 +19,7 @@ function Projects() {
             tech: ["React.js with Vite", "HTML5, CSS", "JS", "Public APIs.", "Gnews API", "NewsData.io API"],
             img: newsImg,
             github: "https://github.com/bhanu0221/NewsHive-Project-Frontend.git",
+            Live: "https://news-hive-frontend.netlify.app/",
 
         },
         {
@@ -40,45 +41,41 @@ function Projects() {
 
                     {/* DIRECT CARDS HERE */}
                     {projects.map((p, index) => (
-                        <div
-                            key={index}
-                            className="bg-white/10 backdrop-blur-md rounded-2xl p-5 shadow hover:shadow-lg transition"
-                        >
+                        <div key={index} className="bg-white/10 backdrop-blur-md rounded-2xl p-5 shadow hover:shadow-lg transition">
                             {/* Image */}
-                            <img
-                                src={p.img}
-                                alt={p.title}
-                                className="rounded-xl w-full h-60 object-cover"
-                            />
+                            <img src={p.img} alt={p.title} className="rounded-xl w-full h-60 object-cover" />
+
                             {/* Title + Desc */}
                             <h3 className="font-semibold text-lg">{p.title}</h3>
                             <p className="mt-2 text-sm text-gray-800">{p.desc}</p>
-                            {/* Tech Chips */}
+
+                            {/* Tech stack */}
                             <div className="mt-4 flex flex-wrap gap-2">
                                 {p.tech.map((t) => (
-                                    <span
-                                        key={t}
-                                        className="text-xs px-2 py-1 bg-slate-50 rounded-full text-blue-600"
-                                    >
+                                    <span key={t} className="text-xs px-2 py-1 bg-slate-50 rounded-full text-blue-600">
                                         {t}
                                     </span>
                                 ))}
                             </div>
+                            
                             {/* Links */}
                             <div className="mt-4 flex gap-3">
-                                <a
-                                    href={p.github}
-                                    target="_blank"
-                                    className="text-sm px-3 py-1 bg-emerald-400 text-black rounded-lg"
-                                >
+                                <a href={p.github} target="_blank" className="text-sm px-3 py-1 bg-emerald-400 text-black rounded-lg">
                                     GitHub
                                 </a>
+
+                                {p.Live && (
+                                    <a href={p.Live} target="_blank" className="text-sm px-3 py-1 bg-red-500 text-white rounded-lg">
+                                        Live Demo
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}
 
                 </div>
             </div>
+            <h2 className="text-center">I will add more Projects soon</h2>
         </section>
     );
 }

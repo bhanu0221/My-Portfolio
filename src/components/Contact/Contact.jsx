@@ -7,14 +7,9 @@ function ContactLink() {
     <section id="contact" className="py-20">
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold">Contact</h2>
-        <p className="mt-2 text-gray-600">Feel Free to Contact If there is issues ? Click below to open the contact form.</p>
+        <p className="mt-2 text-gray-900">Feel Free to Contact If there is an issues ? Click below to open the contact form.</p>
 
-        <a
-          href={url}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-block mt-6 px-6 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
-        >
+        <a href={url} target="_blank" rel="noreferrer" className="inline-block mt-6 px-6 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
           Open Contact Form
         </a>
 
