@@ -11,10 +11,9 @@ import '../src/App.css'
 function App() {
   return (
     
-      <div className="App min-h-screen text-gray-800">
-        {/* Keep App.jsx minimal — it just composes components */}
+      <div className="App min-h-screen">
         <Navbar />
-        <main className="pt-25">
+        <main className="pt-20">
           <Hero />
           <About />
           <Skills />
