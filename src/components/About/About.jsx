@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function About() {
     return (
         <section id="about" className="py-20 rounded-2xl p-6 ">

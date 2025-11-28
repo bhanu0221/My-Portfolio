@@ -4,13 +4,14 @@ import pdf from '../../assets/Anup resume.pdf';
 // Clean hero section — small and focused
 function Hero() {
 
-    function goTo(id) {
+    // this below function I am using for buttons which I have made in below like project, contact buttons.
+    function scrollToId(id) {
         const el = document.getElementById(id);
         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     return (
-        <section id="home" className="min-h-[80vh] flex items-center ">
+        <section id="home" className="min-h-[90vh] flex items-center ">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid gap-8 md:grid-cols-2 items-center">
                     <div>
@@ -23,10 +24,10 @@ function Hero() {
                             I enjoy creating simple, user-friendly interfaces and improving my skills with every project.
                         </p>
 
-
+                        {/* buttons */}
                         <div className="mt-6 flex gap-3">
-                            <button onClick={() => goTo('projects')} className="px-3 py-1.5 bg-indigo-600 text-white rounded-md cursor-pointer">View Projects</button>
-                            <button onClick={() => goTo('contact')} className="px-3 py-1.5 bg-indigo-600 text-white rounded-md cursor-pointer">Contact</button>
+                            <button onClick={() => scrollToId('projects')} className="px-3 py-1.5 bg-indigo-600 text-white rounded-md cursor-pointer">View Projects</button>
+                            <button onClick={() => scrollToId('contact')} className="px-3 py-1.5 bg-indigo-600 text-white rounded-md cursor-pointer">Contact</button>
                             <a href={pdf} className='px-3 py-1.5 bg-indigo-600 text-white rounded-md cursor-pointer' download="My_Resume.pdf" target="_blank" rel="noopener noreferrer">
                                 Download My Resume
                             </a>

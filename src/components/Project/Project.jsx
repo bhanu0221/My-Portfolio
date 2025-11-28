@@ -12,6 +12,7 @@ function Projects() {
             tech: ["Full-Stack web", "HTML5", "CSS", "JS", "Python (Flask)", "MYSQL", "Firebase and Firestore."],
             img: lostImg,
             github: "https://github.com/bhanu0221/Online-lost-found-system-website..git",
+            Live: "",
         },
         {
             title: "NewsHive! Daily news site",
@@ -28,6 +29,7 @@ function Projects() {
             tech: ["React.js with Vite", "HTML5, CSS", "JS", "CoinGecko API", "Frankfurter API", "Slingacademy API."],
             img: CurrencyImg,
             github: "https://github.com/bhanu0221/React-basic-project.git",
+            Live: "https://vite-react-basic.netlify.app/",
         }
     ];
 
@@ -35,23 +37,22 @@ function Projects() {
         <section id="projects" className="py-20">
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl font-bold text-center">Projects</h2>
-                <p className="mt-2 text-center text-gray-600">My project list</p>
 
                 <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
                     {/* DIRECT CARDS HERE */}
-                    {projects.map((p, index) => (
+                    {projects.map((props, index) => (
                         <div key={index} className="bg-white/10 backdrop-blur-md rounded-2xl p-5 shadow hover:shadow-lg transition">
                             {/* Image */}
-                            <img src={p.img} alt={p.title} className="rounded-xl w-full h-60 object-cover" />
+                            <img src={props.img} alt={props.title || "image"} className="rounded-xl w-full h-70 object-cover" />
 
                             {/* Title + Desc */}
-                            <h3 className="font-semibold text-lg">{p.title}</h3>
-                            <p className="mt-2 text-sm text-gray-800">{p.desc}</p>
+                            <h3 className="font-semibold text-lg text-black">{props.title}</h3>
+                            <p className="mt-2 text-sm text-gray-800">{props.desc}</p>
 
                             {/* Tech stack */}
                             <div className="mt-4 flex flex-wrap gap-2">
-                                {p.tech.map((t) => (
+                                {props.tech.map((t) => (
                                     <span key={t} className="text-xs px-2 py-1 bg-slate-50 rounded-full text-blue-600">
                                         {t}
                                     </span>
@@ -60,12 +61,12 @@ function Projects() {
                             
                             {/* Links */}
                             <div className="mt-4 flex gap-3">
-                                <a href={p.github} target="_blank" className="text-sm px-3 py-1 bg-emerald-400 text-black rounded-lg">
+                                <a href={props.github} target="_blank" className="text-sm px-3 py-1 bg-emerald-400 text-black rounded-lg">
                                     GitHub
                                 </a>
 
-                                {p.Live && (
-                                    <a href={p.Live} target="_blank" className="text-sm px-3 py-1 bg-red-500 text-white rounded-lg">
+                                {props.Live && (
+                                    <a href={props.Live} target="_blank" className="text-sm px-3 py-1 bg-red-500 text-white rounded-lg">
                                         Live Demo
                                     </a>
                                 )}

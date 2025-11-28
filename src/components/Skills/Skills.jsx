@@ -11,7 +11,7 @@ function Skills() {
         },
         {
             title: "Database",
-            items: "MySQL, Firebase Firestore"
+            items: "MySQL(basic), Firebase Firestore"
         },
         {
             title: "Tools",
@@ -32,7 +32,7 @@ function Skills() {
                     {skills.map((skill, index) => (
                         <div key={index} className="bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow hover:bg-cyan-50">
                             <h3 className="font-semibold text-lg mb-2">{skill.title}:</h3>
-                            <p className="text-gray-700">{skill.items}</p>
+                            <p className="text-gray-800">{skill.items}</p>
                         </div>
                     ))}
                 </div>
